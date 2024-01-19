@@ -17,30 +17,6 @@ public class Main {
     }
 
 
-    static int plus(int var_1, int var_2) {
-        int result = var_1 + var_2;
-        return result;
-    }
-
-
-    static int minus(int var_1, int var_2) {
-        int result = var_1 - var_2;
-        return result;
-    }
-
-
-    static int multiply(int var_1, int var_2) {
-        int result = var_1 * var_2;
-        return result;
-    }
-
-
-    static int division(int var_1, int var_2) {
-        int result = var_1 / var_2;
-        return result;
-    }
-
-
     enum Roman {
         I(1), II(2), III(3), IV(4), V(5), VI(6), VII(7), VIII(8), IX(9), X(10);
         private final int value;
@@ -77,8 +53,8 @@ public class Main {
             chek = chek + 1;
         }
 
-        Boolean dob1 = true;
-        Boolean dob2 = true;
+        boolean dob1 = true;
+        boolean dob2 = true;
         if (chek == 2) {
 
             try {
@@ -146,16 +122,16 @@ public class Main {
             case 0:
                 throw new IOException(error1);
             case 1:
-                operation_result = (plus(arg1, arg2));
+                operation_result = arg1 + arg2;
                 break;
             case 2:
-                operation_result = minus(arg1, arg2);
+                operation_result = arg1 - arg2;
                 break;
             case 3:
-                operation_result = multiply(arg1, arg2);
+                operation_result = arg1 * arg2;
                 break;
             case 4:
-                operation_result = division(arg1, arg2);
+                operation_result = arg1 / arg2;
                 break;
         }
 
